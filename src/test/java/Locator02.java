@@ -22,6 +22,7 @@ public class Locator02 {
 		//child to parent traverse using xPath(reverse traversing) - reverse traversing is not possible using cssSelector
 		String practiceBtn = driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[1]")).getText();
 		System.out.println(practiceBtn);
+		System.out.println("This is from user second to the develop branch");
 		driver.close();
 
 	}

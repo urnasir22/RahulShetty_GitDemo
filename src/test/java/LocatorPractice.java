@@ -35,6 +35,7 @@ public class LocatorPractice {
 		
 		//using name
 		driver.findElement(By.name("inputPassword")).sendKeys("test123");
+		System.out.println("Find userpassword webelement and send data test123");
 		
 		//using className
 		driver.findElement(By.className("signInBtn")).click();

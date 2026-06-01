@@ -17,6 +17,7 @@ public class Locator02 {
 		//Parent to child and then sibling to sibling using xPath
 		String loginBtn = driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText();
 		System.out.println(loginBtn);
+		System.out.println("This is login button text");
 		
 		//child to parent traverse using xPath(reverse traversing) - reverse traversing is not possible using cssSelector
 		String practiceBtn = driver.findElement(By.xpath("//header/div/button[1]/parent::div/button[1]")).getText();

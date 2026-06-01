@@ -39,6 +39,7 @@ public class LocatorPractice {
 		
 		//using className
 		driver.findElement(By.className("signInBtn")).click();
+		System.out.println("Click on sign in button - This change is in develop branch");
 		
 		//cssSelector using tagName.className
 		System.out.println(driver.findElement(By.cssSelector("p.error")).getText());

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class LocatorPractice {
 	
 	public static void main(String[] arg) throws InterruptedException {
@@ -29,6 +31,7 @@ public class LocatorPractice {
 		
 		//using id
 		driver.findElement(By.id("inputUsername")).sendKeys("Nasir");
+		System.out.println("Find username web element and send data Nasir");
 		
 		//using name
 		driver.findElement(By.name("inputPassword")).sendKeys("test123");
